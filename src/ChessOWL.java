@@ -14,6 +14,7 @@ import java.util.Iterator;
 import javax.xml.datatype.Duration;
 import javax.xml.datatype.XMLGregorianCalendar;
 
+import org.apache.jena.datatypes.xsd.XSDDateTime;
 import org.apache.jena.ext.xerces.xs.datatypes.XSDateTime;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
@@ -58,7 +59,7 @@ public class ChessOWL {
 		String NS = prefixesHashMap.get("mar");
 
 		// get mar:gameID property
-		Property rdfTypeProperty = chessModel.getProperty(NS+MARDictionary.GAME_ID);
+		Property rdfTypeProperty = chessModel.getProperty(NS+MAR.GAME_ID);
 
 		// Create a class from game
 		OntClass gameClass = chessModel.getOntClass(NS+"Game");
@@ -69,10 +70,10 @@ public class ChessOWL {
 		
 		
 		getDataProperties(gameClass);
-//		createGameIndividuals(NS, "game", gameClass);
+		createGameIndividuals(NS, "game", gameClass);
 		
 //		chessModel.write(System.out);
-//		writeToFile(fileName, chessModel);
+		writeToFile(fileName, chessModel);
 		
 	}
 	
@@ -139,7 +140,7 @@ public class ChessOWL {
 	    	// If the class is Game
 		    // load the game properties
 		    if (classOfIndividual.getLocalName().equals("Game")) {
-		    	DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
+		    	SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 //		    	DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
 //		    	final ZonedDateTime parsed = ZonedDateTime.parse(Main.GamesArray.get(i).start_time, formatter);
 //		    	final ZonedDateTime parsed2 = ZonedDateTime.parse(Main.GamesArray.get(i).end_time, formatter);
@@ -151,13 +152,21 @@ public class ChessOWL {
 		    	individual.addLiteral(gameDataPropHashMap.get(MAR.GAME_ID), 
 		    						  Long.parseUnsignedLong(Main.GamesArray.get(i).game_id));
 		    	
-		    	LocalDateTime parsed = LocalDateTime.from(f.parse(Main.GamesArray.get(i).start_time));
-		    	individual.addLiteral(gameDataPropHashMap.get(MAR.START_DATE_TIME), parsed);
+		    	Date parsed = f.parse(Main.GamesArray.get(i).start_time);
+		    	Calendar cal = Calendar.getInstance();
+		    	cal.setTime(parsed);
 		    	
-		    	parsed = LocalDateTime.from(f.parse(Main.GamesArray.get(i).end_time));
-		    	individual.addLiteral(gameDataPropHashMap.get(MAR.END_DATE_TIME), parsed);
-
-		    }
+		    	XSDDateTime date = new XSDDateTime(cal);
+		    	individual.addLiteral(gameDataPropHashMap.get(MAR.START_DATE_TIME), date);
+		    	
+		    	parsed = f.parse(Main.GamesArray.get(i).end_time);
+		    	cal.clear();
+		    	cal.setTime(parsed);
+		    	date = new XSDDateTime(cal);
+		    	individual.addLiteral(gameDataPropHashMap.get(MAR.END_DATE_TIME), date);
+		    	
+		    	
+ 		    }
 		    
 		    
 		    // Else If the class is Player
