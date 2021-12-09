@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.util.Calendar;
@@ -29,13 +30,16 @@ import org.apache.jena.vocabulary.OWL2;
 import com.github.andrewoma.dexx.collection.ArrayList;
 import com.opencsv.exceptions.CsvException;
 
+
+
 public class ChessOWL {
 
 	static OntModel chessModel;
-	static HashMap<String, Property> dataPropHashMap;
+	static HashMap<String, Property> gameDataPropHashMap;
+	static HashMap<String, Property> playerDataPropHashMap;
+	
 	public static void main(String[] args) throws IOException, CsvException, ParseException {
-		
-//		Main createTbox = new Main();
+
 		Main.CreateGamesList(Main.CSV_FILE_PATH);
 		Main.CreatePlayersList(Main.CSV_FILE_PATH_1);
 		
@@ -44,7 +48,8 @@ public class ChessOWL {
 		chessModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
 		chessModel.read("chess.owl", "RDF/XML");
 		
-		dataPropHashMap = new HashMap<>();
+		gameDataPropHashMap = new HashMap<>();
+		playerDataPropHashMap = new HashMap<>();
 		
 		// get the prefixes
 		HashMap<String, String> prefixesHashMap = (HashMap<String, String>) chessModel.getNsPrefixMap();
@@ -64,10 +69,10 @@ public class ChessOWL {
 		
 		
 		getDataProperties(gameClass);
-		createGameIndividuals(NS, "game", gameClass);
+//		createGameIndividuals(NS, "game", gameClass);
 		
-		chessModel.write(System.out);
-		writeToFile(fileName, chessModel);
+//		chessModel.write(System.out);
+//		writeToFile(fileName, chessModel);
 		
 	}
 	
@@ -134,21 +139,23 @@ public class ChessOWL {
 	    	// If the class is Game
 		    // load the game properties
 		    if (classOfIndividual.getLocalName().equals("Game")) {
-		    	DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-		    	
+		    	DateTimeFormatter f = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
+//		    	DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
+//		    	final ZonedDateTime parsed = ZonedDateTime.parse(Main.GamesArray.get(i).start_time, formatter);
+//		    	final ZonedDateTime parsed2 = ZonedDateTime.parse(Main.GamesArray.get(i).end_time, formatter);
 		    	
 //		    	Calendar calendar = Calendar.getInstance();
 //		    	calendar.setTime(dateTime);
 //		    	
 //		    	XSDateTime(calendar);
-		    	individual.addLiteral(dataPropHashMap.get(MARDictionary.GAME_ID), 
+		    	individual.addLiteral(gameDataPropHashMap.get(MAR.GAME_ID), 
 		    						  Long.parseUnsignedLong(Main.GamesArray.get(i).game_id));
 		    	
-		    	LocalDateTime dateTime = LocalDateTime.from(f.parse(Main.GamesArray.get(i).start_time));
-		    	individual.addLiteral(dataPropHashMap.get(MARDictionary.START_DATE_TIME), dateTime);
+		    	LocalDateTime parsed = LocalDateTime.from(f.parse(Main.GamesArray.get(i).start_time));
+		    	individual.addLiteral(gameDataPropHashMap.get(MAR.START_DATE_TIME), parsed);
 		    	
-		    	dateTime = LocalDateTime.from(f.parse(Main.GamesArray.get(i).end_time));
-		    	individual.addLiteral(dataPropHashMap.get(MARDictionary.END_DATE_TIME), dateTime);
+		    	parsed = LocalDateTime.from(f.parse(Main.GamesArray.get(i).end_time));
+		    	individual.addLiteral(gameDataPropHashMap.get(MAR.END_DATE_TIME), parsed);
 
 		    }
 		    
@@ -169,16 +176,19 @@ public class ChessOWL {
 		
 		for (Iterator<OntProperty> iterator = myClass.listDeclaredProperties(false); iterator.hasNext();) {
 			OntProperty myOntProperty = iterator.next();
-			if (myOntProperty.isDatatypeProperty() && !myOntProperty.toString().contains("Property")) {
-				System.out.println(myOntProperty.getLocalName() + " " + myOntProperty.getRange().getLocalName());
-				DataTypeProperties.append(myOntProperty);
-				dataPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+			if (!myOntProperty.toString().contains("Property")) {
+				if (myOntProperty.isDatatypeProperty()) {
+					System.out.println("Data Property: " + myOntProperty.getLocalName() + " " + myOntProperty.getRange().getLocalName());
+//					DataTypeProperties.append(myOntProperty);
+					gameDataPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+				}
+				else if (myOntProperty.isObjectProperty()){
+					System.out.println("Object Property: " + myOntProperty.getLocalName() + " " + myOntProperty.getRange().getLocalName());
+//					DataTypeProperties.append(myOntProperty);
+					playerDataPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+				}	
 			}
-			
 		}
-		
 		return DataTypeProperties;
 	}
-
-	
 }

@@ -240,237 +240,305 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:InverseFunctionalProperty>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game4">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2013-10-31T09:38</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2013-10-31T09:08</j.0:startDateTime>
+    >2013-10-31T09:30:26</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >634471928</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game51">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T22:09</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T22:07</j.0:startDateTime>
+    >2015-09-05T22:05:49</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146896292</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game63">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:07</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:05</j.0:startDateTime>
+    >2015-10-05T06:05:39</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147295680</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game105">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T10:26</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T10:23</j.0:startDateTime>
+    >2015-10-05T10:23:01</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147439980</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game91">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:42</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:37</j.0:startDateTime>
+    >2015-10-05T08:37:22</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147383828</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game35">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:54</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:52</j.0:startDateTime>
+    >2015-09-05T20:52:34</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146832291</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game47">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:51</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:48</j.0:startDateTime>
+    >2015-09-05T21:47:23</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146881822</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game59">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T05:49</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:47</j.0:startDateTime>
+    >2015-10-05T05:47:49</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147284334</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game75">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:45</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:43</j.0:startDateTime>
+    >2015-10-05T06:43:39</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147318983</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game87">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:25</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:20</j.0:startDateTime>
+    >2015-10-05T08:23:45</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147372702</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game99">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T09:58</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:53</j.0:startDateTime>
+    >2015-10-05T09:54:53</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147424206</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game11">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T19:53</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T19:51</j.0:startDateTime>
+    >2015-09-05T19:51:29</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146779863</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game23">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:27</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:25</j.0:startDateTime>
+    >2015-09-05T20:25:59</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146808824</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game5">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2010-05-02T03:02</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2010-04-30T03:02</j.0:startDateTime>
+    >2010-04-28T03:02</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >30400944</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game40">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:05</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:03</j.0:startDateTime>
+    >2015-09-05T21:03:47</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146842558</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game52">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T22:16</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T22:14</j.0:startDateTime>
+    >2015-09-05T22:11:58</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146902706</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game106">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T10:40</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T10:35</j.0:startDateTime>
+    >2015-10-05T10:36:39</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147447421</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game80">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T07:33</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T07:29</j.0:startDateTime>
+    >2015-10-05T07:31:37</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147343643</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game92">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T09:09</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:05</j.0:startDateTime>
+    >2015-10-05T09:05:17</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147396846</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game24">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:28</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:26</j.0:startDateTime>
+    >2015-09-05T20:26:48</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146810940</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game36">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:57</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:55</j.0:startDateTime>
+    >2015-09-05T20:55:42</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146834559</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game110">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T11:45</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T11:40</j.0:startDateTime>
+    >2015-10-05T11:40:26</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147484774</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game48">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:54</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:50</j.0:startDateTime>
+    >2015-09-05T21:49:57</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146886875</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game64">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:08</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:06</j.0:startDateTime>
+    >2015-10-05T06:06:13</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147297061</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game76">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:48</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:46</j.0:startDateTime>
+    >2015-10-05T06:46:38</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147320471</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game88">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:29</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:24</j.0:startDateTime>
+    >2015-10-05T08:25:51</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147375641</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game12">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T19:57</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T19:55</j.0:startDateTime>
+    >2015-09-05T19:55:29</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146782546</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game6">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2010-07-02T02:02</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2010-04-11T02:02</j.0:startDateTime>
+    >2010-05-29T02:02</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >30400926</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game93">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T09:31</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:27</j.0:startDateTime>
+    >2015-10-05T09:26:50</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147409552</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game41">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:07</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:05</j.0:startDateTime>
+    >2015-09-05T21:05:59</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146844960</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game103">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T10:14</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T10:12</j.0:startDateTime>
+    >2015-10-05T10:11:38</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147435025</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game81">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T07:38</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T07:36</j.0:startDateTime>
+    >2015-10-05T07:33:32</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147346515</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game13">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:00</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T19:58</j.0:startDateTime>
+    >2015-09-05T19:58:28</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146785662</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game25">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:30</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
     >2015-09-05T20:28</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
@@ -478,55 +546,71 @@
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game37">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:58</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:56</j.0:startDateTime>
+    >2015-09-05T20:56:46</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146837008</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game49">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:57</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:55</j.0:startDateTime>
+    >2015-09-05T21:53:48</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146888388</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game53">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T05:29</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:27</j.0:startDateTime>
+    >2015-10-05T05:27:31</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147271540</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game65">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:11</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:09</j.0:startDateTime>
+    >2015-10-05T06:09:19</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147297593</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game77">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:52</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:50</j.0:startDateTime>
+    >2015-10-05T06:50:44</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147322002</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game89">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:37</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:35</j.0:startDateTime>
+    >2015-10-05T08:34:17</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147379006</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game7">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T19:15</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T19:13</j.0:startDateTime>
+    >2015-09-05T19:13:50</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146748428</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game39">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:03</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
     >2015-09-05T21:01</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
@@ -534,505 +618,649 @@
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game82">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T07:42</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T07:37</j.0:startDateTime>
+    >2015-10-05T07:38:11</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147349483</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game94">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T09:34</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:29</j.0:startDateTime>
+    >2015-10-05T09:30:20</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147412830</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game30">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:41</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:39</j.0:startDateTime>
+    >2015-09-05T20:39:31</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146821317</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game70">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:33</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:31</j.0:startDateTime>
+    >2015-10-05T06:31:11</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147311999</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game104">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T10:20</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T10:16</j.0:startDateTime>
+    >2015-10-05T10:18:25</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147436559</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game14">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:03</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:01</j.0:startDateTime>
+    >2015-09-05T20:01:35</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146788031</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game26">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:33</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:31</j.0:startDateTime>
+    >2015-09-05T20:31:09</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146813689</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game38">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:00</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:58</j.0:startDateTime>
+    >2015-09-05T20:58:04</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146838337</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game42">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:09</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:07</j.0:startDateTime>
+    >2015-09-05T21:07:17</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146846351</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game54">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T05:32</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:30</j.0:startDateTime>
+    >2015-10-05T05:30:14</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147274206</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game66">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:12</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:10</j.0:startDateTime>
+    >2015-10-05T06:10:44</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147299096</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game78">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:54</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:52</j.0:startDateTime>
+    >2015-10-05T06:52:34</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147323615</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game28">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:37</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:35</j.0:startDateTime>
+    >2015-09-05T20:35:19</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146817302</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game8">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T19:44</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T19:42</j.0:startDateTime>
+    >2015-09-05T19:42:22</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146773175</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game0">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2012-04-10T09:30</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2012-04-10T08:56</j.0:startDateTime>
+    >2012-04-10T08:38:40</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >372626070</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game71">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:36</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:34</j.0:startDateTime>
+    >2015-10-05T06:34:06</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147312828</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game109">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T11:42</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T11:40</j.0:startDateTime>
+    >2015-10-05T11:37:35</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147481086</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game83">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:07</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:03</j.0:startDateTime>
+    >2015-10-05T08:03:42</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147362455</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game95">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T09:41</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:37</j.0:startDateTime>
+    >2015-10-05T09:36:16</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147414913</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game79">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:57</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:55</j.0:startDateTime>
+    >2015-10-05T06:55:46</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147324818</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game101">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T10:08</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T10:04</j.0:startDateTime>
+    >2015-10-05T10:06:03</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147430439</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game113">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T12:03</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T12:01</j.0:startDateTime>
+    >2015-10-05T12:01:17</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147494017</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game15">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:06</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:04</j.0:startDateTime>
+    >2015-09-05T20:04:39</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146790658</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game27">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:34</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:32</j.0:startDateTime>
+    >2015-09-05T20:32:21</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146816153</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game31">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:44</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:42</j.0:startDateTime>
+    >2015-09-05T20:42:07</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146823405</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game43">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:10</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:08</j.0:startDateTime>
+    >2015-09-05T21:08:32</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146848200</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game55">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T05:35</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:33</j.0:startDateTime>
+    >2015-10-05T05:33:46</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147275789</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game67">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:15</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:13</j.0:startDateTime>
+    >2015-10-05T06:13:41</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147300023</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game17">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:11</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:09</j.0:startDateTime>
+    >2015-09-05T20:09:28</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146795590</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game29">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:39</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:37</j.0:startDateTime>
+    >2015-09-05T20:37:48</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146819469</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game9">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T19:47</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T19:45</j.0:startDateTime>
+    >2015-09-05T19:45:11</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146774115</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game1">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2012-11-10T09:14</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2012-11-10T08:21</j.0:startDateTime>
+    >2012-11-10T08:28:20</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >376650570</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game60">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T05:58</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:56</j.0:startDateTime>
+    >2015-10-05T05:56:46</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147290221</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game72">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:39</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:37</j.0:startDateTime>
+    >2015-10-05T06:37:49</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147314443</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game84">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:12</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:10</j.0:startDateTime>
+    >2015-10-05T08:07:44</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147366336</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game96">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T09:46</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:41</j.0:startDateTime>
+    >2015-10-05T09:41:41</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147418531</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game68">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:17</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:15</j.0:startDateTime>
+    >2015-10-05T06:15:27</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147301664</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game102">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T10:11</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T10:06</j.0:startDateTime>
+    >2015-10-05T10:09:43</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147432906</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game16">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:09</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:07</j.0:startDateTime>
+    >2015-09-05T20:07:55</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146793129</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game20">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:21</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:19</j.0:startDateTime>
+    >2015-09-05T20:19:37</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146803279</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game32">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:47</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:45</j.0:startDateTime>
+    >2015-09-05T20:45:59</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146826189</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game44">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:13</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:11</j.0:startDateTime>
+    >2015-09-05T21:11:29</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146849306</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game56">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T05:40</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:38</j.0:startDateTime>
+    >2015-10-05T05:38:05</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147279425</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game18">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:17</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:15</j.0:startDateTime>
+    >2015-09-05T20:15:58</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146800292</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game2">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2013-05-09T09:54</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2013-05-09T09:50</j.0:startDateTime>
+    >2013-05-09T09:19:11</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >593979727</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game61">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:01</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:59</j.0:startDateTime>
+    >2015-10-05T05:59:17</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147292032</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game73">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:42</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:40</j.0:startDateTime>
+    >2015-10-05T06:40:20</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147316215</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game107">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T11:32</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T11:27</j.0:startDateTime>
+    >2015-10-05T11:29:06</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147477259</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game85">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:13</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:11</j.0:startDateTime>
+    >2015-10-05T08:11:36</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147368370</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game57">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T05:42</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:40</j.0:startDateTime>
+    >2015-10-05T05:40:14</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147280856</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game69">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:19</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:17</j.0:startDateTime>
+    >2015-10-05T06:17:13</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147302883</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game111">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T11:52</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T11:49</j.0:startDateTime>
+    >2015-10-05T11:48:02</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147486621</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game97">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T09:50</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:46</j.0:startDateTime>
+    >2015-10-05T09:45:30</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147421533</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game21">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:22</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:20</j.0:startDateTime>
+    >2015-09-05T20:20:57</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146805752</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game33">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:49</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:47</j.0:startDateTime>
+    >2015-09-05T20:47:03</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146828590</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game45">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:15</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:13</j.0:startDateTime>
+    >2015-09-05T21:13:20</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146851520</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game19">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:18</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:16</j.0:startDateTime>
+    >2015-09-05T20:16:05</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146802361</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game3">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2013-03-10T09:03</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2013-03-10T08:44</j.0:startDateTime>
+    >2013-03-10T08:17:11</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >613859708</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game50">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T22:03</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:58</j.0:startDateTime>
+    >2015-09-05T22:00:29</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146890890</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game62">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:05</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:03</j.0:startDateTime>
+    >2015-10-05T06:03:18</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147294111</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game108">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T11:35</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T11:31</j.0:startDateTime>
+    >2015-10-05T11:31:41</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147479351</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game74">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T06:44</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T06:42</j.0:startDateTime>
+    >2015-10-05T06:42:21</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147317592</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game90">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:39</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:37</j.0:startDateTime>
+    >2015-10-05T08:35:49</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147382577</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game112">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T11:58</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T11:55</j.0:startDateTime>
+    >2015-10-05T11:54:28</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147490418</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game46">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T21:16</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T21:14</j.0:startDateTime>
+    >2015-09-05T21:14:14</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146853274</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game58">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T05:46</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T05:44</j.0:startDateTime>
+    >2015-10-05T05:44:59</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147282828</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game100">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T10:03</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:58</j.0:startDateTime>
+    >2015-10-05T09:58:26</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147427522</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game86">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T08:20</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T08:15</j.0:startDateTime>
+    >2015-10-05T08:17:11</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147369157</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game10">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T19:49</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T19:47</j.0:startDateTime>
+    >2015-09-05T19:47:48</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146776713</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game98">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-10-05T09:52</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-10-05T09:50</j.0:startDateTime>
+    >2015-10-05T09:50:48</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1147423667</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game22">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:25</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:23</j.0:startDateTime>
+    >2015-09-05T20:23:04</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146806790</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#game34">
+    <j.0:endDateTime rdf:datatype="java:java.time.LocalDateTime"
+    >2015-09-05T20:51</j.0:endDateTime>
     <j.0:startDateTime rdf:datatype="java:java.time.LocalDateTime"
-    >2015-09-05T20:49</j.0:startDateTime>
+    >2015-09-05T20:49:38</j.0:startDateTime>
     <mar:gameID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
     >1146830602</mar:gameID>
     <rdf:type rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>

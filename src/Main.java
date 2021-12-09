@@ -76,9 +76,9 @@ public class Main {
 //			for(String col:row) {
 //				System.out.print(col + "\t");
 //			}
-			System.out.println(count++);
+//			System.out.println(count++);
 			
-			tempObj.print();
+//			tempObj.print();
 
 		}
 	}
