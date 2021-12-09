@@ -1,0 +1,577 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mominsalar/ontologies/2021/10/chess#"
+     xml:base="http://www.semanticweb.org/mominsalar/ontologies/2021/10/chess"
+     xmlns:mar="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:resource="http://dbpedia.org/resource/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/title -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/title">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Title"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/country -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/country">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="https://dbpedia.org/ontology/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/resource/Rules_of_chess -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/resource/Rules_of_chess">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerObjectProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerObjectProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasGameCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasGameCategory">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasMoves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasMoves">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameMoves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasPlayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasPlayer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://dbpedia.org/ontology/Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasPlayerRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasPlayerRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasResult">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasResultBlack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasResultBlack">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#BlackResult"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasResultWhite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasResultWhite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasResultWhite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#WhiteResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#playedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#playedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameObjectProperties"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#playedGame"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#playedGame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#playedGame">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerObjectProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#MovesProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#MovesProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ResultProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ResultProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#gameID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#gameID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#inactiveFlag -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#inactiveFlag">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#movesList -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#movesList">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#MovesProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameMoves"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#numOfMoves -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#numOfMoves">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#MovesProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameMoves"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#resultType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#resultType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ResultProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Result"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dbpedia.org/ontology/birthDate -->
+
+    <owl:DatatypeProperty rdf:about="https://dbpedia.org/ontology/birthDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dbpedia.org/ontology/birthName -->
+
+    <owl:DatatypeProperty rdf:about="https://dbpedia.org/ontology/birthName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dbpedia.org/ontology/endDateTime -->
+
+    <owl:DatatypeProperty rdf:about="https://dbpedia.org/ontology/endDateTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dbpedia.org/ontology/gender -->
+
+    <owl:DatatypeProperty rdf:about="https://dbpedia.org/ontology/gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dbpedia.org/ontology/startDateTime -->
+
+    <owl:DatatypeProperty rdf:about="https://dbpedia.org/ontology/startDateTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://dbpedia.org/property/fideid -->
+
+    <owl:DatatypeProperty rdf:about="https://dbpedia.org/property/fideid">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Black -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Black">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#BlackResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#BlackResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Result"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#WhiteResult"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Blitz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Blitz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#BlitzRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#BlitzRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#BughouseRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#BughouseRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Bullet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Bullet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Chess960Rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Chess960Rule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ChessRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ChessRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#CrazyHouseRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#CrazyHouseRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Daily -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Daily">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Title"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameCategory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameMoves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameMoves"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#IM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#IM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Title"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#KingOfTheHillRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#KingOfTheHillRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#OddsChessRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#OddsChessRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rapid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rapid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#RapidRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#RapidRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Result -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Result">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#BlackResult"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#WhiteResult"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#StandardRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#StandardRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ThreeCheckRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ThreeCheckRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Title -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Title"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#WGM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#WGM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Title"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#White -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#White">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#WhiteResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#WhiteResult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Result"/>
+    </owl:Class>
+    
+
+
+    <!-- https://dbpedia.org/ontology/Country -->
+
+    <owl:Class rdf:about="https://dbpedia.org/ontology/Country"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

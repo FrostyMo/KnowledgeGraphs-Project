@@ -1,0 +1,43 @@
+<rdf:RDF
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns:vcard='http://www.w3.org/2001/vcard-rdf/3.0#'
+  xmlns:people='http://mominsDictionary/people/'
+ >
+  
+  <rdf:Description rdf:about='http://mominsDictionary/people/SheikhAbdullah'>
+    <vcard:FN>Sheikh Abdullah</vcard:FN>
+    <vcard:N rdf:nodeID="A0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <vcard:Family>Sheikh</vcard:Family>
+    <vcard:Given>Abdullah</vcard:Given>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about='http://mominsDictionary/people/SheikhMahad'>
+    <vcard:FN>Sheikh Mahad</vcard:FN>
+    <vcard:N rdf:nodeID="A1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <vcard:Family>Sheikh</vcard:Family>
+    <vcard:Given>Mahad</vcard:Given>
+  </rdf:Description>
+
+  <rdf:Description rdf:about='http://mominsDictionary/people/MominSalar'>
+    <vcard:FN>Momin Salar</vcard:FN>
+    <vcard:N rdf:nodeID="A2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <vcard:Family>Salar</vcard:Family>
+    <vcard:Given>Momin</vcard:Given>
+  </rdf:Description>
+
+  <rdf:Description rdf:about='http://mominsDictionary/people/AmyNevada'>
+    <vcard:FN>Amy Nevada</vcard:FN>
+    <vcard:N rdf:nodeID="A3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <vcard:Family>Nevada</vcard:Family>
+    <vcard:Given>Amy</vcard:Given>
+  </rdf:Description>
+  
+</rdf:RDF>
