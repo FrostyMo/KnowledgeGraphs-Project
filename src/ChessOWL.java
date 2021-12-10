@@ -15,6 +15,7 @@ import javax.xml.datatype.Duration;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 import org.apache.jena.datatypes.xsd.XSDDateTime;
+import org.apache.jena.datatypes.xsd.impl.XSDBaseStringType;
 import org.apache.jena.ext.xerces.xs.datatypes.XSDateTime;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
@@ -28,6 +29,7 @@ import org.apache.jena.sparql.function.library.print;
 import org.apache.jena.sparql.util.DateTimeStruct.DateTimeParseException;
 import org.apache.jena.util.iterator.ExtendedIterator;
 import org.apache.jena.vocabulary.OWL2;
+import org.apache.logging.log4j.core.config.status.StatusConfiguration;
 
 import com.github.andrewoma.dexx.collection.ArrayList;
 import com.opencsv.exceptions.CsvException;
@@ -40,8 +42,16 @@ public class ChessOWL {
 
 	static OntModel chessModel;
 	static HashMap<String, Property> gameDataPropHashMap;
+	static HashMap<String, Property> gameObjectPropHashMap;
+	
 	static HashMap<String, Property> playerDataPropHashMap;
+	static HashMap<String, Property> playerObjectPropHashMap;
+	
 	static HashMap<String, OntClass> allClassesHashMap;
+	static HashMap<String, Property> allDataPropertiesHashMap;
+	static HashMap<String, Property> allObjectPropertiesHashMap;
+	
+	static HashMap<String, Individual> oneTimeIndividuals;
 	
 	public static void main(String[] args) throws IOException, CsvException, ParseException {
 
@@ -51,7 +61,7 @@ public class ChessOWL {
 		
 		// No inference
 		chessModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-		chessModel.read("chess.owl", "RDF/XML");
+		chessModel.read("chess_latest.owl", "RDF/XML");
 //		ExtendedIterator<OntClass> classesExtendedIterator = chessModel.listClasses();
 		
 		
@@ -59,20 +69,14 @@ public class ChessOWL {
 		gameDataPropHashMap = new HashMap<>();
 		playerDataPropHashMap = new HashMap<>();
 		allClassesHashMap = new HashMap<>();
-		
-		for (ExtendedIterator<OntClass> classesExtendedIterator = chessModel.listClasses(); classesExtendedIterator.hasNext();) {
-			OntClass m_Class = classesExtendedIterator.next();
-			allClassesHashMap.put(m_Class.getLocalName(), m_Class);
-		}
-		for (Object objectName : allClassesHashMap.keySet()) {
-//			   System.out.print(objectName );
-//			   System.out.print(" -> ");
-//			   System.out.println(allClassesHashMap.get(objectName));
-//			   
-//			   Individual individual = chessModel.createIndividual(allClassesHashMap.get(objectName).getNameSpace() + objectName.toString().toLowerCase(), allClassesHashMap.get(objectName));
-//			   individual.addRDFType(OWL2.NamedIndividual);
-			System.out.print("public static final String " + objectName.toString().toUpperCase() + " = \"" + objectName + "\"" );
-		}
+		oneTimeIndividuals = new HashMap<>();
+		gameObjectPropHashMap  = new HashMap<>();
+		playerObjectPropHashMap  = new HashMap<>();
+		allDataPropertiesHashMap = new HashMap<>();
+		allObjectPropertiesHashMap = new HashMap<>();
+		// load classes and individuals
+		// that are non repeating e.g Rules, Categories etc
+		loadClasses();
 		
 		
 		// get the prefixes
@@ -94,10 +98,23 @@ public class ChessOWL {
 
 		String fileName = "chess2.rdf";
 		
+		for (Iterator<OntProperty> iterator = chessModel.listAllOntProperties(); iterator.hasNext();) {
+			OntProperty myOntProperty = iterator.next();
+			if (!myOntProperty.toString().contains("Property")) {
+				if (myOntProperty.isDatatypeProperty()) {
+					allDataPropertiesHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+				}
+				else if(myOntProperty.isObjectProperty()){
+					allObjectPropertiesHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+				}
+				System.out.println("public static final String " + myOntProperty.getLocalName().toString().toUpperCase() + " = \"" + myOntProperty.getLocalName() + "\";" );
+			}
+			
+		}
 		
 		
 //		getDataProperties(gameClass);
-//		createGameIndividuals(NS, "game", gameClass);
+		createGameIndividuals(NS, gameClass);
 		
 //		chessModel.write(System.out);
 		writeToFile(fileName, chessModel);
@@ -135,19 +152,19 @@ public class ChessOWL {
 	// an individualNamePrefix e.g Game (1,2,3... will be appended to it)
 	// a listOfIndividuals e.g GamesArray/PlayersArray
 	// the class of Indivdual
-	static ArrayList<Individual> createGameIndividuals(String NamespaceURI, String individualNamePrefix, OntClass classOfIndividual) throws ParseException {
+	static ArrayList<Individual> createGameIndividuals(String NamespaceURI, OntClass classOfIndividual) throws ParseException {
 	    
 		ArrayList<Individual> individuals = new ArrayList<>();
 		
 	    
 	    // Get all the data properties of classOfIndividual
-	    ArrayList<OntProperty> dataProperties = getDataProperties(classOfIndividual);
+	    ArrayList<OntProperty> dataProperties = getProperties(classOfIndividual);
 	    
 	    int size = 0;
 	    if (classOfIndividual.getLocalName().equals("Game")) {
 	    	size = Main.GamesArray.size();
 	    }
-	    else if (classOfIndividual.getLocalName().equals("Player")) {
+	    else if (classOfIndividual.getLocalName().equals("Person")) {
 	    	size = Main.PlayersArray.size();
 	    }
 	    
@@ -157,7 +174,7 @@ public class ChessOWL {
 	    	
 	    	// ***** Example: createIndividual("mar" + "game" + "1", Game) *****
 	    	// mar:game1, mar:game2, mar:game3...
-	    	Individual individual = chessModel.createIndividual(NamespaceURI + individualNamePrefix + i.toString(), classOfIndividual);
+	    	Individual individual = chessModel.createIndividual(NamespaceURI + classOfIndividual.getLocalName().toLowerCase() + i.toString(), classOfIndividual);
 	    	
 	    	
 	    	// give it a type NamedIndividual for protege
@@ -186,13 +203,45 @@ public class ChessOWL {
 		    	date = new XSDDateTime(cal);
 		    	individual.addLiteral(gameDataPropHashMap.get(MAR.END_DATE_TIME), date);
 		    	
+		    	String ruleIndividualName =  Main.GamesArray.get(i).rules.toLowerCase();
+//		    	System.out.println(ruleIndividualName);
+		    	individual.addProperty(gameObjectPropHashMap.get(MAR.RULES_OF_CHESS),oneTimeIndividuals.get(ruleIndividualName));
 		    	
+		    	String categoryIndividualName =  Main.GamesArray.get(i).time_class.toLowerCase();
+//		    	System.out.println(gameObjectPropHashMap.get(MAR.GAMECATEGORY));
+		    	
+		    	individual.addProperty(gameObjectPropHashMap.get(MAR.HAS_GAME_CATEGORY),oneTimeIndividuals.get(categoryIndividualName));
+		    	
+		    	// create game moves individual
+		    	Individual individualMoves = chessModel.createIndividual(NamespaceURI + MAR.GAMEMOVES.toLowerCase() + i.toString(), allClassesHashMap.get(MAR.GAMEMOVES));
+		    	individualMoves.addRDFType(OWL2.NamedIndividual);
+		    	individualMoves.addLiteral(allDataPropertiesHashMap.get(MAR.MOVESLISTBLACK), Main.GamesArray.get(i).BlackMoves);
+		    	individualMoves.addLiteral(allDataPropertiesHashMap.get(MAR.MOVESLISTWHITE), Main.GamesArray.get(i).WhiteMoves);
+		    	individualMoves.addLiteral(allDataPropertiesHashMap.get(MAR.NUMOFBLACKMOVES), Integer.parseInt(Main.GamesArray.get(i).BlackMovesNum));
+		    	individualMoves.addLiteral(allDataPropertiesHashMap.get(MAR.NUMOFWHITEMOVES), Integer.parseInt(Main.GamesArray.get(i).WhiteMovesNum));
+		    	individualMoves.addLiteral(allDataPropertiesHashMap.get(MAR.NUMOFMOVES), Integer.parseInt(Main.GamesArray.get(i).TMoves));
+		    	individual.addProperty(gameObjectPropHashMap.get(MAR.HAS_MOVES),individualMoves);
+		    	
+		    	// create results
+		    	Individual individualResultWhite = chessModel.createIndividual(NamespaceURI + MAR.RESULT.toLowerCase() + i.toString() + "W", allClassesHashMap.get(MAR.RESULT));
+		    	Individual individualResultBlack = chessModel.createIndividual(NamespaceURI + MAR.RESULT.toLowerCase() + i.toString() + "B", allClassesHashMap.get(MAR.RESULT));
+		    	individualResultWhite.addRDFType(OWL2.NamedIndividual);
+		    	individualResultBlack.addRDFType(OWL2.NamedIndividual);
+		    	
+		    	individualResultWhite.addLiteral(allDataPropertiesHashMap.get(MAR.RESULTCOLOR),"white");
+		    	individualResultWhite.addLiteral(allDataPropertiesHashMap.get(MAR.RESULTTYPE),Main.GamesArray.get(i).white_result);
+		    	individualResultBlack.addLiteral(allDataPropertiesHashMap.get(MAR.RESULTCOLOR),"black");
+		    	individualResultBlack.addLiteral(allDataPropertiesHashMap.get(MAR.RESULTTYPE),Main.GamesArray.get(i).white_result);
+		    	individual.addProperty(gameObjectPropHashMap.get(MAR.HASRESULT),individualResultWhite);
+		    	individual.addProperty(gameObjectPropHashMap.get(MAR.HASRESULT),individualResultBlack);
+//		    	chessModel.getIndividual(allClassesHashMap.get(ruleClassName));
+//		    	allClassesHashMap.get(ruleClassName).getNameSpace() + ruleClassName.toString().toLowerCase()
  		    }
 		    
 		    
 		    // Else If the class is Player
 		    // load the player properties
-		    else if (classOfIndividual.getLocalName().equals("Player")) {
+		    else if (classOfIndividual.getLocalName().equals("Person")) {
 		    	
 		    }
 		    individuals.append(individual);
@@ -201,7 +250,7 @@ public class ChessOWL {
 	    return individuals;
 	}
 	
-	static ArrayList<OntProperty> getDataProperties(OntClass myClass){
+	static ArrayList<OntProperty> getProperties(OntClass myClass){
 		ArrayList<OntProperty> DataTypeProperties = new ArrayList<>();
 		
 		for (Iterator<OntProperty> iterator = myClass.listDeclaredProperties(false); iterator.hasNext();) {
@@ -210,12 +259,22 @@ public class ChessOWL {
 				if (myOntProperty.isDatatypeProperty()) {
 					System.out.println("Data Property: " + myOntProperty.getLocalName() + " " + myOntProperty.getRange().getLocalName());
 //					DataTypeProperties.append(myOntProperty);
-					gameDataPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+					if (myClass.getLocalName().equals("Game")) {
+						gameDataPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+					}
+					else if (myClass.getLocalName().equals("Person")) {
+						playerDataPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+					}
 				}
 				else if (myOntProperty.isObjectProperty()){
 					System.out.println("Object Property: " + myOntProperty.getLocalName() + " " + myOntProperty.getRange().getLocalName());
 //					DataTypeProperties.append(myOntProperty);
-					playerDataPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+					if (myClass.getLocalName().equals("Game")) {
+						gameObjectPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+					}
+					else if (myClass.getLocalName().equals("Person")) {
+						playerObjectPropHashMap.put(myOntProperty.getLocalName(), myOntProperty);
+					}
 				}	
 			}
 		}
@@ -234,18 +293,56 @@ public class ChessOWL {
 				return true;
 			case MAR.PERSON:
 				return true;
-//			case MAR.PERSON:
-//				return true;
-//			case MAR.PERSON:
-//				return true;
-//			case MAR.PERSON:
-//				return true;
-//			case MAR.PERSON:
-//				return true;
-//			case MAR.PERSON:
-//				return true;
+			case MAR.BLITZGAME:
+				return true;
+			case MAR.BULLETGAME:
+				return true;
+			case MAR.RAPIDGAME:
+				return true;
+			case MAR.DAILYGAME:
+				return true;
+			case MAR.LAZYGAME:
+				return true;
+			case MAR.HIGHLYACTIVEPLAYER:
+				return true;
+			case MAR.RATING:
+				return true;
+			case MAR.BLITZRATING:
+				return true;
+			case MAR.RAPIDRATING:
+				return true;
+			case MAR.STANDARDRATING:
+				return true;
 				
 		}
 		return false;
 	}
+	
+	static void loadClasses() {
+		for (ExtendedIterator<OntClass> classesExtendedIterator = chessModel.listClasses(); classesExtendedIterator.hasNext();) {
+			OntClass m_Class = classesExtendedIterator.next();
+			
+			if (m_Class.isURIResource()) {
+//				System.out.println(m_Class );
+				allClassesHashMap.put(m_Class.getLocalName(), m_Class);
+			}
+			
+		}
+		for (Object objectName : allClassesHashMap.keySet()) {
+			
+			if (!containsRepeatingClasses(objectName.toString())) {
+				System.out.print(objectName );
+				System.out.print(" -> ");
+				System.out.println(allClassesHashMap.get(objectName));
+				Individual individual = chessModel.createIndividual(allClassesHashMap.get(objectName).getNameSpace() + objectName.toString().toLowerCase(), allClassesHashMap.get(objectName));
+				individual.addRDFType(OWL2.NamedIndividual);
+				System.out.println("1 :" + individual.getLocalName());
+				oneTimeIndividuals.put(individual.getLocalName(), individual);
+			}
+			
+//			System.out.println("public static final String " + objectName.toString().toUpperCase() + " = \"" + objectName + "\";" );
+		}
+	}
+	
+	
 }

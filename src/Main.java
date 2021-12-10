@@ -1,6 +1,7 @@
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -12,8 +13,10 @@ import com.opencsv.exceptions.CsvException;
 public class Main {
 	public static ArrayList<Game> GamesArray;
 	public static ArrayList<Player> PlayersArray;
+	public static HashMap<String, Player> PlayersHashMap;
+	public static HashMap<String, Game> GamesHashMap;
 	
-	public static final String CSV_FILE_PATH = "./sahi_hogyi.csv";
+	public static final String CSV_FILE_PATH = "./sahi_hogyi_2.csv";
 	public static final String CSV_FILE_PATH_1= "./womenChessPlayers.csv";
 			
 
@@ -33,6 +36,7 @@ public class Main {
 	public static void CreatePlayersList (String file) throws IOException, CsvException{
 		
 		PlayersArray = new ArrayList<Player>();
+		PlayersHashMap = new HashMap<>();
 		// Create an object of filereader class
 		// with CSV file as a parameter.
 		
@@ -50,13 +54,14 @@ public class Main {
 		for (String[] row : allData) {
 			Player tempObj = new Player(row);
 			PlayersArray.add(tempObj);	
-
+			PlayersHashMap.put(tempObj.FideID, tempObj);
 //			tempObj.print();
 		}
 	}
 	public static void CreateGamesList(String file) throws IOException, CsvException
 	{
 		GamesArray = new ArrayList<Game>();
+		GamesHashMap = new HashMap<>();
 		// Create an object of filereader class
 		// with CSV file as a parameter.
 		FileReader filereader = new FileReader(file);
@@ -73,6 +78,7 @@ public class Main {
 		
 			Game tempObj = new Game(row);
 			GamesArray.add(tempObj);
+			GamesHashMap.put(tempObj.game_id, tempObj);
 //			for(String col:row) {
 //				System.out.print(col + "\t");
 //			}

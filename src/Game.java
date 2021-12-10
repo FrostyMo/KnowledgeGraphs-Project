@@ -16,6 +16,10 @@ public class Game {
 	public String black_result = "";
 	public ArrayList<String> moves;
 	public String TMoves = "";
+	public String BlackMoves = "";
+	public String WhiteMoves = "";
+	public String BlackMovesNum = "";
+	public String WhiteMovesNum = "";
 	public Game() {}
 	
 	public Game(String[] row) {
@@ -36,6 +40,10 @@ public class Game {
 		black_result = row[9];
 		moves = getMoves(row[10]);
 		TMoves = row[11];
+		BlackMoves = row[12];
+		WhiteMoves = row[13];
+		BlackMovesNum = row[14];
+		WhiteMovesNum = row[15];
 //		System.out.print("Moves length = ");
 //		System.out.println(moves.size());
 //		System.out.print("T Moves length = ");
