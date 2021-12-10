@@ -26,10 +26,13 @@ import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.sparql.function.library.print;
 import org.apache.jena.sparql.util.DateTimeStruct.DateTimeParseException;
+import org.apache.jena.util.iterator.ExtendedIterator;
 import org.apache.jena.vocabulary.OWL2;
 
 import com.github.andrewoma.dexx.collection.ArrayList;
 import com.opencsv.exceptions.CsvException;
+
+import jdk.dynalink.beans.StaticClass;
 
 
 
@@ -38,6 +41,7 @@ public class ChessOWL {
 	static OntModel chessModel;
 	static HashMap<String, Property> gameDataPropHashMap;
 	static HashMap<String, Property> playerDataPropHashMap;
+	static HashMap<String, OntClass> allClassesHashMap;
 	
 	public static void main(String[] args) throws IOException, CsvException, ParseException {
 
@@ -48,9 +52,27 @@ public class ChessOWL {
 		// No inference
 		chessModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
 		chessModel.read("chess.owl", "RDF/XML");
+//		ExtendedIterator<OntClass> classesExtendedIterator = chessModel.listClasses();
+		
+		
 		
 		gameDataPropHashMap = new HashMap<>();
 		playerDataPropHashMap = new HashMap<>();
+		allClassesHashMap = new HashMap<>();
+		
+		for (ExtendedIterator<OntClass> classesExtendedIterator = chessModel.listClasses(); classesExtendedIterator.hasNext();) {
+			OntClass m_Class = classesExtendedIterator.next();
+			allClassesHashMap.put(m_Class.getLocalName(), m_Class);
+		}
+		for (Object objectName : allClassesHashMap.keySet()) {
+			   System.out.print(objectName );
+			   System.out.print(" -> ");
+			   System.out.println(allClassesHashMap.get(objectName));
+			   
+			   Individual individual = chessModel.createIndividual(allClassesHashMap.get(objectName).getNameSpace() + objectName.toString().toLowerCase(), allClassesHashMap.get(objectName));
+			   individual.addRDFType(OWL2.NamedIndividual);
+		}
+		
 		
 		// get the prefixes
 		HashMap<String, String> prefixesHashMap = (HashMap<String, String>) chessModel.getNsPrefixMap();
@@ -63,14 +85,18 @@ public class ChessOWL {
 
 		// Create a class from game
 		OntClass gameClass = chessModel.getOntClass(NS+"Game");
-
+		OntClass gameCategory = chessModel.getOntClass(NS+"GameCategory");
+		
+		for (ExtendedIterator<OntClass> classesExtendedIterator = gameCategory.listSubClasses(); classesExtendedIterator.hasNext();) {
+			System.out.println(classesExtendedIterator.next().getLocalName());
+		}
 
 		String fileName = "chess2.rdf";
 		
 		
 		
-		getDataProperties(gameClass);
-		createGameIndividuals(NS, "game", gameClass);
+//		getDataProperties(gameClass);
+//		createGameIndividuals(NS, "game", gameClass);
 		
 //		chessModel.write(System.out);
 		writeToFile(fileName, chessModel);
@@ -140,15 +166,9 @@ public class ChessOWL {
 	    	// If the class is Game
 		    // load the game properties
 		    if (classOfIndividual.getLocalName().equals("Game")) {
-		    	SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-//		    	DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
-//		    	final ZonedDateTime parsed = ZonedDateTime.parse(Main.GamesArray.get(i).start_time, formatter);
-//		    	final ZonedDateTime parsed2 = ZonedDateTime.parse(Main.GamesArray.get(i).end_time, formatter);
 		    	
-//		    	Calendar calendar = Calendar.getInstance();
-//		    	calendar.setTime(dateTime);
-//		    	
-//		    	XSDateTime(calendar);
+		    	SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+
 		    	individual.addLiteral(gameDataPropHashMap.get(MAR.GAME_ID), 
 		    						  Long.parseUnsignedLong(Main.GamesArray.get(i).game_id));
 		    	
@@ -199,5 +219,20 @@ public class ChessOWL {
 			}
 		}
 		return DataTypeProperties;
+	}
+	
+	static boolean containsRepeatingClasses(String className) {
+		switch (className){
+			case MAR.GAME:
+				break;
+			case MAR.GAMEMOVES:
+				break;
+			case MAR.PLAYER:
+				break;
+			case MAR.RESULT:
+				break;
+			case 
+				
+		}
 	}
 }
