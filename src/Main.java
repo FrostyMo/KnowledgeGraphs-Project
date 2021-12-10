@@ -16,7 +16,7 @@ public class Main {
 	public static HashMap<String, Player> PlayersHashMap;
 	public static HashMap<String, Game> GamesHashMap;
 	
-	public static final String CSV_FILE_PATH = "./sahi_hogyi_2.csv";
+	public static final String CSV_FILE_PATH = "./preProcessedGamesFinal.csv";
 	public static final String CSV_FILE_PATH_1= "./womenChessPlayers.csv";
 			
 

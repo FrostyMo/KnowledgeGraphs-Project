@@ -82,8 +82,10 @@ public class ChessOWL {
 		// get the prefixes
 		HashMap<String, String> prefixesHashMap = (HashMap<String, String>) chessModel.getNsPrefixMap();
 
+		printHashMap(prefixesHashMap);
 		// our current namespace is mar
 		String NS = prefixesHashMap.get("mar");
+//		String NS = prefixesHashMap.get("mar");
 
 		// get mar:gameID property
 		Property rdfTypeProperty = chessModel.getProperty(NS+MAR.GAME_ID);
@@ -111,10 +113,12 @@ public class ChessOWL {
 			}
 			
 		}
-		
+		OntClass personClass = chessModel.getOntClass("https://dbpedia.org/ontology/"+"Person");
 		
 //		getDataProperties(gameClass);
+		createGameIndividuals("https://dbpedia.org/ontology/", personClass);
 		createGameIndividuals(NS, gameClass);
+		
 		
 //		chessModel.write(System.out);
 		writeToFile(fileName, chessModel);
@@ -172,6 +176,20 @@ public class ChessOWL {
     	// Then just append current iteration to it
 	    for (Integer i =0; i < size; i++) {
 	    	
+	    	int flag = 0;
+	    	if (classOfIndividual.getLocalName().equals("Person")) {
+	    		for (Game game : Main.GamesArray) {
+//	    			System.out.println(game.black_usernameID + "-" + game.white_usernameID + "-" + Main.PlayersArray.get(i).FideID);
+	    			if (game.black_usernameID.equals(Main.PlayersArray.get(i).FideID) || game.white_usernameID.equals(Main.PlayersArray.get(i).FideID)) {
+	    				
+	    				flag = 1;
+	    				break;
+	    			}
+	    		}
+	    		if (flag == 0) {
+	    			continue;
+	    		}
+	    	}
 	    	// ***** Example: createIndividual("mar" + "game" + "1", Game) *****
 	    	// mar:game1, mar:game2, mar:game3...
 	    	Individual individual = chessModel.createIndividual(NamespaceURI + classOfIndividual.getLocalName().toLowerCase() + i.toString(), classOfIndividual);
@@ -242,7 +260,10 @@ public class ChessOWL {
 		    // Else If the class is Player
 		    // load the player properties
 		    else if (classOfIndividual.getLocalName().equals("Person")) {
-		    	
+		    	String birthName = Main.PlayersArray.get(i).firstName + Main.PlayersArray.get(i).lastName;
+		    	individual.addLiteral(playerDataPropHashMap.get(MAR.FIDEID), Integer.parseInt(Main.PlayersArray.get(i).FideID));
+		    	individual.addLiteral(playerDataPropHashMap.get(MAR.BIRTHDATE), Double.parseDouble(Main.PlayersArray.get(i).Year_of_birth));
+		    	individual.addLiteral(playerDataPropHashMap.get(MAR.BIRTHNAME), birthName);
 		    }
 		    individuals.append(individual);
 		}

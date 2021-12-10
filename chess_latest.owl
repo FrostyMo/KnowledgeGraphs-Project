@@ -345,7 +345,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PersonProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://dbpedia.org/ontology/Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
