@@ -203,6 +203,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#RatingProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#RatingProperty"/>
+    
+
+
     <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ResultProperty -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#ResultProperty">
@@ -227,6 +233,16 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#PlayerProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Player"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasRatingValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#hasRatingValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#RatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Rating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -548,6 +564,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#HighlyActivePlayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#HighlyActivePlayer">
+        <rdfs:subClassOf rdf:resource="https://dbpedia.org/ontology/Person"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#IM -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#IM">
@@ -560,6 +584,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#KingOfTheHillRule">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#GameRule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#LazyGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#LazyGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#Game"/>
     </owl:Class>
     
 

@@ -29,6 +29,7 @@ public final class MAR {
 	public static final String ODDSCHESSRULE = "OddsChessRule";
 	public static final String BULLET = "Bullet";
 	public static final String PLAYER = "Player";
+	public static final String PERSON = "Person";
 	public static final String IM = "IM";
 	public static final String GM = "GM";
 	public static final String TITLE = "Title";

@@ -65,12 +65,13 @@ public class ChessOWL {
 			allClassesHashMap.put(m_Class.getLocalName(), m_Class);
 		}
 		for (Object objectName : allClassesHashMap.keySet()) {
-			   System.out.print(objectName );
-			   System.out.print(" -> ");
-			   System.out.println(allClassesHashMap.get(objectName));
-			   
-			   Individual individual = chessModel.createIndividual(allClassesHashMap.get(objectName).getNameSpace() + objectName.toString().toLowerCase(), allClassesHashMap.get(objectName));
-			   individual.addRDFType(OWL2.NamedIndividual);
+//			   System.out.print(objectName );
+//			   System.out.print(" -> ");
+//			   System.out.println(allClassesHashMap.get(objectName));
+//			   
+//			   Individual individual = chessModel.createIndividual(allClassesHashMap.get(objectName).getNameSpace() + objectName.toString().toLowerCase(), allClassesHashMap.get(objectName));
+//			   individual.addRDFType(OWL2.NamedIndividual);
+			System.out.print("public static final String " + objectName.toString().toUpperCase() + " = \"" + objectName + "\"" );
 		}
 		
 		
@@ -224,15 +225,27 @@ public class ChessOWL {
 	static boolean containsRepeatingClasses(String className) {
 		switch (className){
 			case MAR.GAME:
-				break;
+				return true;
 			case MAR.GAMEMOVES:
-				break;
+				return true;
 			case MAR.PLAYER:
-				break;
+				return true;
 			case MAR.RESULT:
-				break;
-			case 
+				return true;
+			case MAR.PERSON:
+				return true;
+//			case MAR.PERSON:
+//				return true;
+//			case MAR.PERSON:
+//				return true;
+//			case MAR.PERSON:
+//				return true;
+//			case MAR.PERSON:
+//				return true;
+//			case MAR.PERSON:
+//				return true;
 				
 		}
+		return false;
 	}
 }
