@@ -34,6 +34,23 @@ public class SPARQL_Query {
 				+ "				  ?bNode <http://www.w3.org/2001/vcard-rdf/3.0#Given> ?givenName .\n"
 				+ "				}\n";
 		
+		String queryString1 = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n"
+			+"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n"
+			+"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+			+"PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n"
+			+"PREFIX mar: <http://www.semanticweb.org/mominsalar/ontologies/2021/10/mar#>\n"
+			+"PREFIX dbo: <https://dbpedia.org/ontology/>\n"
+			+"PREFIX bif: <http://www.openlinksw.com/schemas/bif#>\n"
+			+"SELECT ?Players ?Category ?startDateTime ?endDateTime ?playTimen\n"
+			+"WHERE {\n"
+			+ "   ?Players mar:playedGame ?Game .\n"
+			+ "   ?Game mar:hasGameCategory ?Category .\n"
+			+ "   ?Game dbo:startDateTime ?startDateTime .\n"
+			 +"   ?Game dbo:endDateTime ?endDateTime .\n"
+			+ "   BIND ( (?endDateTime) - (?startDateTime) as ?playTime ) .\n"
+			+ "   # 0Years 0Months 0Days... less than 40 minutes\n"
+			+ "   FILTER (?playTime < \"P0Y0M0DT0H40M00.000S\"^^xsd:duration) .\n";
+		
 		Query query = QueryFactory.create(queryString);
 		
 		try(QueryExecution qExecution = QueryExecutionFactory.create(query, model)){

@@ -23,27 +23,27 @@ public class Game {
 	public Game() {}
 	
 	public Game(String[] row) {
-		game_id = row[1];
-		String[] startDateTimeArray = getDateTime(row[2]);
+		game_id = row[0];
+		String[] startDateTimeArray = getDateTime(row[1]);
 //		start_Date = startDateTimeArray[0];
 //		start_time = startDateTimeArray[1];
 //		String[] endDateTimeArray = getDateTime(row[3]);
 //		end_Date = endDateTimeArray[0];
 //		end_time = endDateTimeArray[1];
-		start_time = row[2];
-		end_time = row[3];
-		time_class = row[4];
-		rules = row[5];
-		white_usernameID = row[6];
-		white_result = row[7];
-		black_usernameID = row[8];
-		black_result = row[9];
-		moves = getMoves(row[10]);
-		TMoves = row[11];
-		BlackMoves = row[12];
-		WhiteMoves = row[13];
-		BlackMovesNum = row[14];
-		WhiteMovesNum = row[15];
+		start_time = row[1];
+		end_time = row[2];
+		time_class = row[3];
+		rules = row[4];
+		white_usernameID = row[5];
+		white_result = row[6];
+		black_usernameID = row[7];
+		black_result = row[8];
+		moves = getMoves(row[9]);
+		TMoves = row[10];
+		BlackMoves = row[11];
+		WhiteMoves = row[12];
+		BlackMovesNum = row[13];
+		WhiteMovesNum = row[14];
 //		System.out.print("Moves length = ");
 //		System.out.println(moves.size());
 //		System.out.print("T Moves length = ");

@@ -13,11 +13,15 @@ import com.opencsv.exceptions.CsvException;
 public class Main {
 	public static ArrayList<Game> GamesArray;
 	public static ArrayList<Player> PlayersArray;
+	public static ArrayList<Continent> continentsArray;
+	
 	public static HashMap<String, Player> PlayersHashMap;
 	public static HashMap<String, Game> GamesHashMap;
+	public static HashMap<String, String> CountryCodeContinentHashMap;
 	
-	public static final String CSV_FILE_PATH = "./preProcessedGamesFinal.csv";
+	public static final String CSV_FILE_PATH = "./gamesFinal1.csv";
 	public static final String CSV_FILE_PATH_1= "./womenChessPlayers.csv";
+	public static final String CSV_FILE_PATH_2= "./CountryCodes.csv";
 			
 
 //	public static void main(String[] args) throws IOException, CsvException
@@ -37,9 +41,9 @@ public class Main {
 		
 		PlayersArray = new ArrayList<Player>();
 		PlayersHashMap = new HashMap<>();
+	
 		// Create an object of filereader class
-		// with CSV file as a parameter.
-		
+		// with CSV file as a parameter.	
 		FileReader filereader = new FileReader(file);
 		// create csvReader object
 		// and skip first Line
@@ -86,6 +90,32 @@ public class Main {
 			
 //			tempObj.print();
 
+		}
+	}
+	
+public static void CreateContinentsList (String file) throws IOException, CsvException{
+		
+		continentsArray = new ArrayList<>();
+		CountryCodeContinentHashMap = new HashMap<>();
+		// Create an object of filereader class
+		// with CSV file as a parameter.
+		
+		FileReader filereader = new FileReader(file);
+		// create csvReader object
+		// and skip first Line
+		
+		CSVReader csvReader = new CSVReaderBuilder(filereader)
+								.withSkipLines(1)
+								.build();
+		List<String[]> allData = csvReader.readAll();
+		
+		// Iterating Over Rows and Adding Temp Object of Game to Array of Game
+		// Where each row represents a Specific Game
+		for (String[] row : allData) {
+			Continent tempObj = new Continent(row);
+			continentsArray.add(tempObj);	
+			CountryCodeContinentHashMap.put(tempObj.Alpha3Code, tempObj.Continent);
+//			tempObj.print();
 		}
 	}
 }

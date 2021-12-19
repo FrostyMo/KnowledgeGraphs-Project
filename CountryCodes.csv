@@ -1,0 +1,65 @@
+Continent,CountryName,Alpha3Code
+Africa,Algeria,DZA
+Africa,Egypt,EGY
+Africa,SouthAfrica,ZAF
+South_America,Argentina,ARG
+South_America,Brazil,BRA
+South_America,Colombia,COL
+South_America,Ecuador,ECU
+South_America,Peru,PER
+South_America,Venezuela,VEN
+Asia,Armenia,ARM
+Asia,Azerbaijan,AZE
+Asia,China,CHN
+Asia,Georgia,GEO
+Asia,Indonesia,IDN
+Asia,India,IND
+Asia,Iran,IRN
+Asia,Israel,ISR
+Asia,Kazakhstan,KAZ
+Asia,Mongolia,MNG
+Asia,Philippines,PHL
+Asia,Qatar,QAT
+Asia,Singapore,SGP
+Asia,Turkmenistan,TKM
+Asia,Turkey,TUR
+Asia,Uzbekistan,UZB
+Asia,VietNam,VNM
+Oceania,Australia,AUS
+Europe,Austria,AUT
+Europe,Belgium,BEL
+Europe,Bosnia and Herzegovina,BIH
+Europe,Belarus,BLR
+Europe,Bulgaria,BGR
+Europe,Croatia,HRV
+Europe,Czechia,CZE
+Europe,United Kingdom,GBR
+Europe,Spain,ESP
+Europe,Estonia,EST
+Europe,Finland,FIN
+Europe,France,FRA
+Europe,Germany,DEU
+Europe,Greece,GRC
+Europe,Hungary,HUN
+Europe,Iceland,ISL
+Europe,Italy,ITA
+Europe,Latvia,LVA
+Europe,Lithuania,LTU
+Europe,Luxembourg,LUX
+Europe,Moldova,MDA
+Europe,Monaco,MCO
+Europe,Netherlands,NLD
+Europe,Norway,NOR
+Europe,Poland,POL
+Europe,Romania,ROU
+Europe,Russian Federation,RUS
+Europe,Slovenia,SVN
+Europe,Serbia,SRB
+Europe,Switzerland,CHE
+Europe,Slovakia,SVK
+Europe,Sweden,SWE
+Europe,Ukraine,UKR
+North_America,Canada,CAN
+North_America,Cuba,CUB
+North_America,Puerto Rico,PRI
+North_America,United States,USA

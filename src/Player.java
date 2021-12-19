@@ -17,17 +17,17 @@ public class Player {
 		
 	}
 	public Player(String[] row) {
-		FideID = row[1];
-		Federation = row[2];
-		Gender = row[3];
-		Year_of_birth = row[4];
-		Title = row[5];
-		Standard_Rating = row[6];
-		Rapid_rating = row[7];
-		Blitz_rating = row[8];
-		Inactive_flag = row[9];
-		firstName = row[10];
-		lastName = row[11];
+		FideID = row[0];
+		Federation = row[1];
+		Gender = row[2];
+		Year_of_birth = row[3];
+		Title = row[4];
+		Standard_Rating = row[5];
+		Rapid_rating = row[6];
+		Blitz_rating = row[7];
+		Inactive_flag = row[8];
+		firstName = row[9];
+		lastName = row[10];
 	}
 	public void print() {
 		System.out.println("Fide ID of Player = "+FideID);
