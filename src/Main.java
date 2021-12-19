@@ -24,19 +24,6 @@ public class Main {
 	public static final String CSV_FILE_PATH_2= "./CountryCodes.csv";
 			
 
-//	public static void main(String[] args) throws IOException, CsvException
-//	{
-//		System.out.println("Creating Games Object List\n");
-//		CreateGamesList(CSV_FILE_PATH);
-//		System.out.println("Games List Size = " + GamesArray.size());
-//		System.out.println("__________________Created_______________________");
-//		
-//		System.out.println("Creating Players Object List\n");
-//		CreatePlayersList(CSV_FILE_PATH_1);
-//		System.out.println("Players List Size = " + PlayersArray.size());
-//		System.out.println("__________________Created_______________________\n");
-//		
-//	}
 	public static void CreatePlayersList (String file) throws IOException, CsvException{
 		
 		PlayersArray = new ArrayList<Player>();
@@ -83,12 +70,6 @@ public class Main {
 			Game tempObj = new Game(row);
 			GamesArray.add(tempObj);
 			GamesHashMap.put(tempObj.game_id, tempObj);
-//			for(String col:row) {
-//				System.out.print(col + "\t");
-//			}
-//			System.out.println(count++);
-			
-//			tempObj.print();
 
 		}
 	}

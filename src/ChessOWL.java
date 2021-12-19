@@ -57,7 +57,10 @@ public class ChessOWL {
 	static HashMap<String, Individual> oneTimeIndividuals;
 	
 	static HashMap<String, String> nameSpaceHashMap;
+
 	
+//////////////////////////////////////////*****MAIN*******////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	public static void main(String[] args) throws IOException, CsvException, ParseException {
 
 		Main.CreateGamesList(Main.CSV_FILE_PATH);
@@ -67,8 +70,6 @@ public class ChessOWL {
 		// No inference
 		chessModel = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
 		chessModel.read("chess_latest.owl", "RDF/XML");
-//		ExtendedIterator<OntClass> classesExtendedIterator = chessModel.listClasses();
-		
 		
 		
 		gameDataPropHashMap = new HashMap<>();
@@ -80,6 +81,7 @@ public class ChessOWL {
 		allDataPropertiesHashMap = new HashMap<>();
 		allObjectPropertiesHashMap = new HashMap<>();
 		nameSpaceHashMap = new HashMap<>();
+		
 		// load classes and individuals
 		// that are non repeating e.g Rules, Categories etc
 		loadClasses();
@@ -101,6 +103,10 @@ public class ChessOWL {
 
 		String fileName = "chess2.rdf";
 		
+		
+		// SAVE ALL PROPERTIES
+		// DATA TYPE -> allDataPropertiesHashMap
+		// OBJECT TYPE -> allObjectPropertiesHashMap
 		for (Iterator<OntProperty> iterator = chessModel.listAllOntProperties(); iterator.hasNext();) {
 			OntProperty myOntProperty = iterator.next();
 			if (!myOntProperty.toString().contains("Property")) {
@@ -116,24 +122,20 @@ public class ChessOWL {
 			
 		}
 		
-		
-		OntClass personClass = chessModel.getOntClass(MAR.NS_PERSON+"Person");
-		
-//		getDataProperties(gameClass);
+		// Create the country individuals
+		// map them to their continents
 		createCountryIndividuals();
 		
 		createGameIndividuals(MAR.NS_GAME, gameClass);
-//		createGameIndividuals(MAR.NS_PERSON, personClass);
 		createPlayerIndividuals();
-		
-		
-//		chessModel.write(System.out);
+
 		writeToFile(fileName, chessModel);
-//		printHashMap(uriHashMap);
-//		System.out.println("SADSADSADSA");
-//		printHashMap(nameSpaceHashMap);
+
 		printHashMap(Main.CountryCodeContinentHashMap);
+		
 	}
+//////////////////////////////////////////*****MAIN END*******////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	
 	// write ontology to a file
